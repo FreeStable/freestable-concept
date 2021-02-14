@@ -42,6 +42,8 @@ A liquidation can occur when a minter hasn't made a debt repayment instalment in
 
 These requirements protect minters from accidental/black swan liquidations such as the one with MakerDAO in March 2020.
 
+> Potential feature: If the collateralization ratio (of some collateral eligible to be liquidated) is below 100%, the liquidator could be rewarded with governance tokens whose value bridges the missing collateralization ratio gap. Maker has a similar feature.
+
 ## Mechanisms to keep the peg
 
 ### Stablecoin price
