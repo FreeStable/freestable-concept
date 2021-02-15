@@ -110,3 +110,7 @@ Link: https://github.com/FreeStable/free-stable-v0-2
 - Both fixed and relative minimum instalment amount
 - Partial liquidations
 - Compensating liquidators in case collateralization ratio is below 100%
+
+## Discussion
+
+Please share your thoughts and feedback here: https://github.com/FreeStable/freestable-concept/discussions/1 
