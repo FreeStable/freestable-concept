@@ -97,7 +97,7 @@ Link: https://github.com/FreeStable/free-stable-v0-1
 - A burning fee instead of an interest rate
 - Collateral lock until debt is repaid
 - Regular debt repayments (instalments)
-- Liquidations allowed (under certain conditions: the last debt instalment not paid in time, the coll. ratio below 110%)
+- Liquidations allowed (under certain conditions: the last debt instalment not paid in time, the coll. ratio below the threshold)
 
 Link: https://github.com/FreeStable/free-stable-v0-2
 
