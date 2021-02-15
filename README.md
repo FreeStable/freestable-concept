@@ -78,3 +78,35 @@ Decentralised collateralised stablecoins (like DAI, sUSD, and also FreeStable) a
 - Liquidation: anyone can burn stablecoin in order to get a certain minter's collateral (under certain conditions).
 
 Algorithmic stablecoins (a new kind of decentralised stablecoins) don't have any redeemability at all, because there's no collateral involved.
+
+## Implementations
+
+### v1
+
+- Collateralized with ETH only
+- A burning fee instead of an interest rate
+- Collateral lock instead of liquidations
+- Simple design to reduce the potential attack/bug surface
+
+Link: https://github.com/FreeStable/free-stable-v0-1 
+
+### v2
+
+- Collateralized with ETH only
+- Collateralization ratio at 120% by default, can be changed by governance
+- A burning fee instead of an interest rate
+- Collateral lock until debt is repaid
+- Regular debt repayments (instalments)
+- Liquidations allowed (under certain conditions: the last debt instalment not paid in time, the coll. ratio below 110%)
+
+Link: https://github.com/FreeStable/free-stable-v0-2
+
+### Future versions
+
+- Modularity
+- Oracle contract
+- Governance token contract
+- Custom coll. ratio for each vault
+- Both fixed and relative minimum instalment amount
+- Partial liquidations
+- Compensating liquidators in case collateralization ratio is below 100%
