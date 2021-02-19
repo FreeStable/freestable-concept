@@ -26,19 +26,22 @@ The system bears some similarities with MakerDAO and Synthetix, but also has imp
 
 ## Minting
 
-A user (minter) mints a new stablecoin by locking up a certain amount of ETH (collateral). The minting ratio is not necessarily 1:1 (100%), but likely higher - depending on what the DAO decides (a 120% ratio seems reasonable).
+A user (minter) mints a new stablecoin by locking up a certain amount of ETH (collateral). The minimum minting ratio is not necessarily 1:1 (100%), but likely higher - depending on what the DAO decides (a 150% ratio seems reasonable).
 
-Note that the amount of locked collateral does not change with the collateral price swings (as it is the case with Synthetix). If the collateral price would rise by 100%, the minter wouldn't be able to just unlock half of the collateral without any debt repayment. Synthetix, on the other hand, allows this.
+Note that the amount of locked collateral does not change with the collateral price swings (as it is the case with Synthetix). If the collateral price rises, the minter wouldn't be able to unlock part of the collateral without any debt repayment. Synthetix, on the other hand, allows this.
 
 ## Burning
 
-Burning means sending stablecoin tokens back to the stablecoin contract (using the burn function) and receiving (some of) the collateral back. Example: If minter repays back 30% of their stablecoin debt, they get back 30% of their ETH collateral.
+Burning means sending stablecoin tokens back to the stablecoin contract (using the burn function) and receiving (at least some of) the collateral back. Example: If minter repays back 30% of their stablecoin debt, they get back 30% of their ETH collateral.
 
-A minter needs to regularly burn stablecoins, otherwise they might risk having their position liquidated. 
+A minter needs to regularly burn stablecoins (repay debt instalments), otherwise they risk having their position liquidated. 
 
 ## Liquidations
 
-A liquidation can occur when a minter hasn't made a debt repayment instalment in the required time, AND their collateralization ratio is below threshold.
+A liquidation can occur when a minter:
+
+- hasn't made a debt repayment instalment in the required time, AND 
+- their collateralization ratio is below threshold.
 
 These requirements protect minters from accidental/black swan liquidations such as the one with MakerDAO in March 2020.
 
@@ -60,7 +63,7 @@ If the burn fee is low, minters are incentivized to repay their debt more often 
 
 ### DAO token rewards
 
-Another issue that new stablecoins face is incentivizing people to become minters. A common approach currently is to incentivize them with rewards in the governance tokens. This also helps distributing tokens to actual users of the protocol.
+Another issue that new stablecoins face is incentivizing people to become minters (and having more tokens in circulation). A common approach currently is to incentivize them with rewards in the governance tokens. This also helps distributing tokens to actual users of the protocol.
 
 ## Redeemability
 
@@ -70,7 +73,7 @@ It's worth knowing that no stablecoin has complete/unconditional redeemability.
 
 Centralized stablecoins like USDC and TUSD have minimum amounts set up (TUSD - $1000, USD - $100) in order to redeem fiat currency for the stablecoin. And they also do KYC.
 
-USDT says it is redeemable and it kind of allows it, but it's not 100% collateralized (only 74%). It also has hefty fees for redeeming USDT, though.
+USDT says it is redeemable and it kind of allows it, but Tether is not 100% collateralized (only 74%). It also has hefty fees for redeeming USDT, though.
 
 Decentralised collateralised stablecoins (like DAI, sUSD, and also FreeStable) allow redeeming in two different ways:
 
