@@ -81,7 +81,7 @@ Algorithmic stablecoins (a new kind of decentralised stablecoins) don't have any
 
 ## Implementations
 
-### v1
+### v0.1
 
 - Collateralized with ETH only
 - A burning fee instead of an interest rate
@@ -90,7 +90,7 @@ Algorithmic stablecoins (a new kind of decentralised stablecoins) don't have any
 
 Link: https://github.com/FreeStable/free-stable-v0-1 
 
-### v2
+### v0.2
 
 - Collateralized with ETH only
 - Collateralization ratio at 120% by default, can be changed by governance
